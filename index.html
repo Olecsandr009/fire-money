@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Rubik:wght@300;400;500;600;700&display=swap&_v=20220531100653"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220531100653">
+    <title>Мій сайт</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+    <div class="header__container">
+        <div class="header__logo">
+            <img src="img/logo.svg" alt="Logotype" class="header__logo-icon">
+        </div>
+        <nav class="header__navigation">
+            <ul class="header__list">
+                <li class="header__item"><a href="#feedback" class="header__link">Почему мы?</a></li>
+                <li class="header__item"><a href="#about" class="header__link">О сервисе</a></li>
+                <li class="header__item"><a href="#spoler" class="header__link">Вопросы-ответы</a></li>
+            </ul>
+        </nav>
+        <div class="header__links">
+            <a href="#" class="header__btn btn-orange">входа в <span>личный</span> кабинет</a>
+            <a href="#" data-burger-link="1" class="header__btn burger-menu">
+                <img src="img/burger-icon.svg" alt="burger icon" class="header__burger-icon">
+            </a>
+        </div>
+    </div>
+</header>
+
+<div data-burger="1" class="burger">
+    <div class="burger__body">
+        <a href="#" data-burger-exit="1" class="burger__body-exit">
+            <img src="img/burger-exit.png" alt="" class="body-exit__image">
+        </a>
+        <nav class="header__navigation">
+            <ul class="header__list">
+                <li class="header__item"><a href="#feedback" class="header__link">Почему мы?</a></li>
+                <li class="header__item"><a href="#about" class="header__link">О сервисе</a></li>
+                <li class="header__item"><a href="#spoler" class="header__link">Вопросы-ответы</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+		<main class="main">
+			<section class="hero">
+    <div class="hero__container">
+        <div class="hero__content">
+            <p class="hero__media-text">
+                Горячие предложения
+            </p>
+            <h1 class="hero__title">
+                быстрых займов
+                по всей Украине!
+            </h1>
+            <p class="hero__sub-title">
+                Без проверки кредитной истории.
+                От 1 000 ₽ за 15 минут.
+            </p>
+            <strong class="hero__text">Внимание! Услуга обработки заявки платная
+                и составляет от 98 ₽ до 398 ₽ раз в неделю</strong>
+        </div>
+        <div class="hero__info">
+            <div class="hero__media">
+                <img src="img/hero/girl.png" alt="Image girl" class="hero__image">
+            </div>
+            <div class="hero__media-block">
+                <h3 class="hero__media-title">Cумма кредита</h3>
+                <label for="input1" data-range-label="1" class="hero__media-label">
+                    <input type="range" data-range-input="1" id="input1" class="hero__media-input">
+                </label>
+                <div class="hero__media-values">
+                    <span class="hero__media-value">1 000 ₽ </span>
+                    <span class="hero__media-value">100 000 ₽ </span>
+                </div>
+                <h3 class="hero__media-title">Cрок кредита</h3>
+                <label for="input2" data-range-label="2" class="hero__media-label">
+                    <input data-range-input="2" type="range" id="input2" class="hero__media-input">
+                </label>
+                <div class="hero__media-values">
+                    <span class="hero__media-value">3</span>
+                    <span class="hero__media-value">30</span>
+                </div>
+                <div class="hero__media-links">
+                    <button class="hero__media-btn btn-gradient">Оформить заявку</button>
+                </div>
+                <div class="hero__media-blocks">
+                    <div class="hero__media-block-bottom">
+                        <h6 class="hero__media-block-tite">Вы берете</h6>
+                        <p class="hero__media-block-value">20 000 ₽ </p>
+                    </div>
+                    <div class="hero__media-block-bottom">
+                        <h6 class="hero__media-block-tite">Вы берете</h6>
+                        <p class="hero__media-block-value">25 650 ₽ </p>
+                    </div>
+                    <div class="hero__media-block-bottom">
+                        <h6 class="hero__media-block-tite">Дата возврата</h6>
+                        <p class="hero__media-block-value">08 января 2022</p>
+                    </div>
+                    <div class="hero__media-block-bottom">
+                        <h6 class="hero__media-block-tite">Ежемесячный платеж</h6>
+                        <p class="hero__media-block-value">5 650 ₽ </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+			<section class="benefits">
+    <div class="benefits__container">
+        <article class="benefits__article top">
+            <h2 class="benefits__title title">Лучшие предложения</h2>
+            <div class="benefits__blocks">
+                <div class="benefits__block lite">
+                    <h3 class="benefits__block-title">
+                        <span>15 000 ₽</span> на <span>7</span> дней
+                    </h3>
+                    <ul class="benefits__block-list">
+                        <li class="benefits__block-item">
+                            Дата возврата:
+                            <p class="benefits__block-text">12 января 2022</p>
+                        </li>
+                        <li class="benefits__block-item pay">
+                            К возврату:
+                            <p class="benefits__block-text">45 500 ₽</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="benefits__block basic">
+                    <h3 class="benefits__block-title">
+                        <span>25 000 ₽</span> на <span>1</span> месяц
+                    </h3>
+                    <ul class="benefits__block-list">
+                        <li class="benefits__block-item">
+                            Дата возврата:
+                            <p class="benefits__block-text">12 января 2022</p>
+                        </li>
+                        <li class="benefits__block-item pay">
+                            К возврату:
+                            <p class="benefits__block-text">45 500 ₽</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="benefits__block pro">
+                    <h3 class="benefits__block-title">
+                        <span>45 000 ₽</span> на <span>1</span> год
+                    </h3>
+                    <ul class="benefits__block-list">
+                        <li class="benefits__block-item">
+                            Дата возврата:
+                            <p class="benefits__block-text">12 января 2022</p>
+                        </li>
+                        <li class="benefits__block-item pay">
+                            К возврату:
+                            <p class="benefits__block-text">45 500 ₽</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="benefits__text-bottom">
+                * Расчёт не является публичное офертой и может отличаться от реальной ставки кредитора
+            </p>
+        </article>
+        <article class="benefits__article">
+            <h2 class="benefits__title title">Как получить деньги</h2>
+            <div class="benefits__columns">
+                <div class="benefits__column active">
+                    <div class="benefits__column-media">
+                        <img src="img/benefits/icon1.svg" alt="Icon" class="benefits__column-icon">
+                    </div>
+                    <div class="benefits__column-steps">
+                        <p class="benefits__column-step">1</p>
+                    </div>
+                    <p class="benefits__column-text">Выберите сумму займа</p>
+                </div>
+                <div class="benefits__column">
+                    <div class="benefits__column-media">
+                        <img src="img/benefits/icon2.svg" alt="Icon" class="benefits__column-icon">
+                    </div>
+                    <div class="benefits__column-steps">
+                        <p class="benefits__column-step">2</p>
+                    </div>
+                    <p class="benefits__column-text">Заполните
+                        анкету</p>
+                </div>
+                <div class="benefits__column">
+                    <div class="benefits__column-media">
+                        <img src="img/benefits/icon3.svg" alt="Icon" class="benefits__column-icon">
+                    </div>
+                    <div class="benefits__column-steps">
+                        <p class="benefits__column-step">3</p>
+                    </div>
+                    <p class="benefits__column-text">Дождитесь рассмотрения заявки</p>
+                </div>
+                <div class="benefits__column">
+                    <div class="benefits__column-media">
+                        <img src="img/benefits/icon4.svg" alt="Icon" class="benefits__column-icon">
+                    </div>
+                    <div class="benefits__column-steps">
+                        <p class="benefits__column-step">4</p>
+                    </div>
+                    <p class="benefits__column-text">Получите деньги любым удобным способом</p>
+                </div>
+            </div>
+            <div class="benefits__links">
+                <a href="#" class="benefits__btn btn-gradient">Оформить заявку</a>
+            </div>
+        </article>
+    </div>
+</section>
+			<section class="geting">
+    <h2 class="geting__title title">Способы получения</h2>
+    <p class="geting__subtitle">На карту QIWI Yandex Деньги Наличные</p>
+    <div class="geting__blocks">
+        <a href="#" class="geting__block">
+            <div class="geting__media">
+                <img src="img/geting/icon1.png" alt="Icon" class="geting__icon">
+            </div>
+            <img src="img/geting/arrow.svg" alt="Icon" class="geting__icon">
+        </a>
+        <a href="#" class="geting__block">
+            <div class="geting__media">
+                <img src="img/geting/icon2.png" alt="Icon" class="geting__icon">
+            </div>
+            <img src="img/geting/arrow.svg" alt="Icon" class="geting__icon">
+        </a>
+        <a href="#" class="geting__block">
+            <div class="geting__media">
+                <img src="img/geting/icon3.png" alt="Icon" class="geting__icon">
+            </div>
+            <img src="img/geting/arrow.svg" alt="Icon" class="geting__icon">
+        </a>
+        <a href="#" class="geting__block">
+            <div class="geting__media">
+                <img src="img/geting/icon4.png" alt="Icon" class="geting__icon">
+            </div>
+            <img src="img/geting/arrow.svg" alt="Icon" class="geting__icon">
+        </a>
+        <a href="#" class="geting__block">
+            <div class="geting__media">
+                <img src="img/geting/icon5.svg" alt="Icon" class="geting__icon">
+            </div>
+            <img src="img/geting/arrow.svg" alt="Icon" class="geting__icon">
+        </a>
+    </div>
+    <div class="geting__links">
+        <a href="#" class="geting__btn btn-gradient">Оформить заявку</a>
+    </div>
+</section>
+			<section id="feedback" class="feedback">
+    <div class="feedback__container">
+        <h2 class="feedback__title title">Почему выбирают нас</h2>
+        <div class="feedback__blocks">
+            <div class="feedback__block">
+                <div class="feedback__media">
+                    <img src="img/feedback/ava1.png" alt="Avatar" class="feedback__image">
+                </div>
+                <h4 class="feedback__name">
+                    Екатерина Романова, 26 лет
+                </h4>
+                <p class="feedback__locate">
+                    г. Москва
+                </p>
+                <p class="feedback__text">
+                    Для того, чтобы воспользоваться услугой, вам необходимо
+                    лишь заполнить анкету на сайте, все
+                    остальное сервис сделает за вас, сэкономив вам большое
+                    количество времени и сил. Наш сервис работает
+                    со всеми клиентами, нам не важно, какая у вас кредитная
+                    история и имеются ли текущие просрочки.
+                </p>
+                <div class="feedback__arrows">
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star-active.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star-active.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star-active.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star-active.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                </div>
+            </div>
+            <div class="feedback__block">
+                <div class="feedback__media">
+                    <img src="img/feedback/ava2.png" alt="Avatar" class="feedback__image">
+                </div>
+                <h4 class="feedback__name">
+                    Екатерина Романова, 26 лет
+                </h4>
+                <p class="feedback__locate">
+                    г. Москва
+                </p>
+                <p class="feedback__text">
+                    Для того, чтобы воспользоваться услугой, вам необходимо
+                    лишь заполнить анкету на сайте, все
+                    остальное сервис сделает за вас, сэкономив вам большое
+                    количество времени и сил. Наш сервис работает
+                    со всеми клиентами, нам не важно, какая у вас кредитная
+                    история и имеются ли текущие просрочки.
+                </p>
+                <div class="feedback__arrows">
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star-active.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star-active.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star-active.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star-active.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                </div>
+            </div>
+            <div class="feedback__block">
+                <div class="feedback__media">
+                    <img src="img/feedback/ava3.png" alt="Avatar" class="feedback__image">
+                </div>
+                <h4 class="feedback__name">
+                    Екатерина Романова, 26 лет
+                </h4>
+                <p class="feedback__locate">
+                    г. Москва
+                </p>
+                <p class="feedback__text">
+                    Для того, чтобы воспользоваться услугой, вам необходимо
+                    лишь заполнить анкету на сайте, все
+                    остальное сервис сделает за вас, сэкономив вам большое
+                    количество времени и сил. Наш сервис работает
+                    со всеми клиентами, нам не важно, какая у вас кредитная
+                    история и имеются ли текущие просрочки.
+                </p>
+                <div class="feedback__arrows">
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star-active.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star-active.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star-active.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star-active.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                    <a href="#" class="feedback__arrow">
+                        <img src="img/feedback/star.svg" alt="Icon" class="feedback__icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="feedback__links">
+            <a href="#" class="feedback__btn btn-gradient">Оформить заявку</a>
+            <a href="#" class="feedback__btn btn-border">Все отзывы</a>
+        </div>
+    </div>
+</section>
+			<section class="clients">
+    <div class="clients__container">
+        <h2 class="clients__title title white">Наши клиенты</h2>
+        <div class="clients__blocks">
+            <div class="clients__block">
+                <div class="clients__media">
+                    <img src="img/clients/exit.svg" alt="Icon" class="clients__icon">
+                </div>
+                <div class="clients__content">
+                    <h5 class="clients__name">Екатерина Романова</h5>
+                    <p class="clients__text">Получила отказ 45 сек назад</p>
+                    <p class="clients__locate">г. Москва</p>
+                </div>
+            </div>
+            <div class="clients__block">
+                <div class="clients__media">
+                    <img src="img/clients/add.svg" alt="Icon" class="clients__icon">
+                </div>
+                <div class="clients__content">
+                    <h5 class="clients__name">Игорь Николаев</h5>
+                    <p class="clients__text">Взял 5 000 ₽ 2 мин назад</p>
+                    <p class="clients__locate">г. Москва</p>
+                </div>
+            </div>
+            <div class="clients__block">
+                <div class="clients__media">
+                    <img src="img/clients/upload.svg" alt="Icon" class="clients__icon">
+                </div>
+                <div class="clients__content">
+                    <h5 class="clients__name">Светлана Борисовна</h5>
+                    <p class="clients__text">Внес на счет 12 000 ₽ 45 сек назад</p>
+                    <p class="clients__locate">г. Москва</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+			<section id="about" class="about">
+    <div class="about__container">
+        <h2 class="about__title title">О сервисе</h2>
+        <div class="about__blocks">
+            <div class="about__block">
+                <h4 class="about__block-title">
+                    Все возможные риски и убытки,
+                    и условия выдачи кредитов.
+                </h4>
+                <p class="about__block-text">
+                    <span>
+                        о вашим анкетным данным сервис автоматически выбирает наиболее выгодные предложения и работает
+                        непосредственно с кредитными организациями, предоставляющими микрозаймы
+                        В случае приобретения платной услуги, вы получаете полный доступ к функциональности сервиса
+                        сроком на 1 год с момента активации услуги!
+                    </span>
+                    <span>
+                        Ваша заявка будет отправляться в МФО с наибольшей вероятностью одобрения в данный момент времени
+                        с соблюдением необходимых пауз между отправками. При предварительном одобрении кредитные
+                        организации сами связываются с вами, и вам необходимо лишь подтвердить свое согласие на займ и
+                        забрать деньги.
+                        Список МФО, в которые была отправлена ваша заявка, и другую необходимую информацию о работе в
+                        рамках платной услуги вы можете наблюдать в личном кабинете, в разделе Отчеты
+                        Стоимость услуги всего 1499 рублей. Для вашего удобства оплата услуги происходит в рассрочку:
+                        четыре платежа по 374.8 рублей каждые пять дней. Оплачивая услугу, вы получаете доступ к
+                        функциональности сервиса сроком на 1 год (365 дней) с момента активации услуги.
+                    </span>
+                    <span>
+                        Если вы получили займ и более не нуждаетесь в услугах сервиса - вы можете остановить обработку
+                        вашей заявки самостоятельно и в любое время в разделе Отписаться от услуг.
+                    </span>
+                </p>
+            </div>
+            <div class="about__block">
+                <h4 class="about__block-title">
+                    Что будет при просрочке
+                </h4>
+                <p class="about__block-text">
+                    <span>
+                        о вашим анкетным данным сервис автоматически выбирает наиболее выгодные предложения и работает
+                        непосредственно с кредитными организациями, предоставляющими микрозаймы
+                        В случае приобретения платной услуги, вы получаете полный доступ к функциональности сервиса
+                        сроком на 1 год с момента активации услуги!
+                    </span>
+                    <span>
+                        Ваша заявка будет отправляться в МФО с наибольшей вероятностью одобрения в данный момент времени
+                        с соблюдением необходимых пауз между отправками. При предварительном одобрении кредитные
+                        организации сами связываются с вами, и вам необходимо лишь подтвердить свое согласие на займ и
+                        забрать деньги.
+                        Список МФО, в которые была отправлена ваша заявка, и другую необходимую информацию о работе в
+                        рамках платной услуги вы можете наблюдать в личном кабинете, в разделе Отчеты
+                        Стоимость услуги всего 1499 рублей. Для вашего удобства оплата услуги происходит в рассрочку:
+                        четыре платежа по 374.8 рублей каждые пять дней. Оплачивая услугу, вы получаете доступ к
+                        функциональности сервиса сроком на 1 год (365 дней) с момента активации услуги.
+                    </span>
+                    <span>
+                        Если вы получили займ и более не нуждаетесь в услугах сервиса - вы можете остановить обработку
+                        вашей заявки самостоятельно и в любое время в разделе Отписаться от услуг.
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+			<section id="spoler" class="spoler">
+    <div class="spoler__container">
+        <h2 class="spoler__title title">Вопросы-ответы</h2>
+        <div class="spoler__blocks">
+            <a href="#" data-spoler-link="1" class="spoler__block-title active">
+                Как долго обрабатывается заявка?
+            </a>
+            <p data-spoler="1" class="spoler__block-text">
+                Вашим анкетным данным сервис автоматически выбирает наиболее выгодные предложения и работает
+                непосредственно с кредитными организациями, предоставляющими микрозаймы
+                в случае приобретения платной услуги, вы получаете полный доступ
+                к функциональности сервиса сроком на 1
+                год с момента активации услуги!
+            </p>
+            <a href="#" data-spoler-link="2" class="spoler__block-title">
+                Как погасить полученный займ?
+            </a>
+            <p hidden style="display: none" data-spoler="2" class="spoler__block-text">
+                Вашим анкетным данным сервис автоматически выбирает наиболее выгодные предложения и работает
+                непосредственно с кредитными организациями, предоставляющими микрозаймы
+                в случае приобретения платной услуги, вы получаете полный доступ
+                к функциональности сервиса сроком на 1
+                год с момента активации услуги!
+            </p>
+            <a href="#" data-spoler-link="3" class="spoler__block-title">
+                Как получить деньги?
+            </a>
+            <p hidden style="display: none" data-spoler="3" class="spoler__block-text">
+                Вашим анкетным данным сервис автоматически выбирает наиболее выгодные предложения и работает
+                непосредственно с кредитными организациями, предоставляющими микрозаймы
+                в случае приобретения платной услуги, вы получаете полный доступ
+                к функциональности сервиса сроком на 1
+                год с момента активации услуги!
+            </p>
+            <a href="#" data-spoler-link="4" class="spoler__block-title">
+                География сервиса?
+            </a>
+            <p hidden style="display: none" data-spoler="4" class="spoler__block-text">
+                Вашим анкетным данным сервис автоматически выбирает наиболее выгодные предложения и работает
+                непосредственно с кредитными организациями, предоставляющими микрозаймы
+                в случае приобретения платной услуги, вы получаете полный доступ
+                к функциональности сервиса сроком на 1
+                год с момента активации услуги!
+            </p>
+            <a href="#" data-spoler-link="5" class="spoler__block-title">
+                Как остановить обработку заявки?
+            </a>
+            <p hidden style="display: none" data-spoler="5" class="spoler__block-text">
+                Вашим анкетным данным сервис автоматически выбирает наиболее выгодные предложения и работает
+                непосредственно с кредитными организациями, предоставляющими микрозаймы
+                в случае приобретения платной услуги, вы получаете полный доступ
+                к функциональности сервиса сроком на 1
+                год с момента активации услуги!
+            </p>
+            <a href="#" data-spoler-link="6" class="spoler__block-title">
+                Какова стоимость услуги?
+            </a>
+            <p hidden style="display: none" data-spoler="6" class="spoler__block-text">
+                Вашим анкетным данным сервис автоматически выбирает наиболее выгодные предложения и работает
+                непосредственно с кредитными организациями, предоставляющими микрозаймы
+                в случае приобретения платной услуги, вы получаете полный доступ
+                к функциональности сервиса сроком на 1
+                год с момента активации услуги!
+            </p>
+        </div>
+    </div>
+</section>
+			<section class="get-pay">
+    <div class="get-pay__container">
+        <div class="get-pay__content">
+            <h2 class="get-pay__title title">Получи деньги здесь и сейчас</h2>
+            <p class="get-pay__text">
+                Без проверки кредитной истории.
+                От 1 000 ₽ за 15 минут.
+            </p>
+            <div class="get-pay__links">
+                <a href="#" class="get-pay__btn btn-gradient">Оформить заявку</a>
+            </div>
+        </div>
+        <div class="get-pay__media">
+            <img src="img/get-pay.png" alt="Image" class="get-pay__image">
+        </div>
+    </div>
+</section>
+		</main>
+		<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__head">
+            <div class="footer__logo">
+                <img src="img/logo.svg" alt="Logotype" class="footer__icon">
+            </div>
+            <nav class="footer__navigation first">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a href="#feedback" class="footer__nav-link">Почему мы?</a></li>
+                    <li class="footer__nav-item"><a href="#about" class="footer__nav-link">О сервисе</a></li>
+                    <li class="footer__nav-item"><a href="#spoler" class="footer__nav-link">Вопросы-ответы</a></li>
+                </ul>
+            </nav>
+            <div class="footer__soc">
+                <a href="mailto:ustohelp@gmail.com" class="footer__mail">ustohelp@gmail.com</a>
+                <a href="tel:88008080080" class="footer__phone">8 800 808-00-80</a>
+            </div>
+        </div>
+        <nav class="footer__navigation two">
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#feedback" class="footer__nav-link">Почему мы?</a></li>
+                <li class="footer__nav-item"><a href="#about" class="footer__nav-link">О сервисе</a></li>
+                <li class="footer__nav-item"><a href="#spoler" class="footer__nav-link">Вопросы-ответы</a></li>
+            </ul>
+        </nav>
+        <div class="footer__list">
+            <h4 class="footer__title">Список кредиторов</h4>
+            <ul class="footer__list-list">
+                <li class="footer__list-item">
+                    ООО "МКК СКОРФИН", 344101, г. Ростов-на-Дону, ул. Портовая, д. 193, оф. 302, Лицензия №
+                    1703020008232, ИНН 3664223480, ОГРН 1163668109428, процентная ставка 0,99% в день
+                </li>
+                <li class="footer__list-item">
+                    ООО МФК "Быстроденьги", 123290 г. Москва, 1-й Магистральный туп., д.11 стр.10, Лицензия №
+                    2110573000002, ИНН 7325081622, ОГРН 1087325005899, процентная ставка 0% в день
+                </li>
+                <li class="footer__list-item">
+                    ООО "МКК КАНГАРИЯ", 344101, г. Ростов-на-Дону, ул. Ленинградская, д. 7, пом. № П-13, Лицензия №
+                    1904067009295, ИНН 9201526872, ОГРН 1189204008564, процентная ставка 0% в день
+                </li>
+                <li class="footer__list-item">
+                    ООО МКК "Киберлэндинг", 420043, г. Казань, ул. Достоевского, д. 52, оф. 3, Лицензия № 1803392008777,
+                    ИНН 1659182700, ОГРН 1171690064920, процентная ставка 0% в день
+                </li>
+                <li class="footer__list-item">
+                    ООО МКК "Кредиттер", 115280, г. Москва, ул. Ленинская Слобода, д. 19, стр. 6, ком. 6, 7, Лицензия №
+                    1903045009373, ИНН 7702463482, ОГРН 1197746100530, процентная ставка 0,99% в день
+                </li>
+                <li class="footer__list-item">
+                    ООО МФК "Лайм-Займ", 630102, г. Новосибирск, ул. Кирова, д. 48, оф. 1401, Лицензия №
+                    651303045004102, ИНН 7724889891, ОГРН 1137746831606, процентная ставка 0% в день
+                </li>
+                <li class="footer__list-item">
+                    ООО МКК "Академическая", 630091, г. Новосибирск, ул. Державина, 28, оф. 301, Лицензия №
+                    1903550009325, ИНН 5407973316, ОГРН 1195476007605, процентная ставка 0% в день
+                </li>
+                <li class="footer__list-item">
+                    ООО МКК "КАППАДОКИЯ", 443045, г. Самара, ул. Авроры, д. 150, пом. №н4, офис 306.3, Лицензия №
+                    1903475009492, ИНН 7459007268, ОГРН 1197456052199, процентная ставка 0% в день
+                </li>
+                <li class="footer__list-item">
+                    ООО МКК "ДЗП-Центр", 190031, г. Санкт-Петербург, пер. Спасский, д. 14/35, лит. А, пом. 38 Н,
+                    Лицензия № 651403140005467, ИНН 7838500558, ОГРН 1147847029990, процентная ставка 0% в день
+                </li>
+                <li class="footer__list-item">
+                    ООО МКК "Кватро", 443030, г. Самара, ул. Чернореченская, д. 21, оф. 425, Лицензия № 1903550009364,
+                    ИНН 5402053330, ОГРН 1195476044609, процентная ставка 0% в день
+                </li>
+                <li class="footer__list-item">
+                    ООО МКК "Турбозайм", 123290, г. Москва, туп. Магистральный 1-й, д. 11, стр.10, Лицензия №
+                    651303045003951, ИНН 7702820127, ОГРН 1137746702367, процентная ставка 0,99% в день
+                </li>
+            </ul>
+        </div>
+        <div class="footer__carts">
+            <div class="footer__carts-left">
+                <h4 class="footer__carts-title">Какие карты принимаем</h4>
+                <div class="footer__carts-icons">
+                    <img src="img/footer/cart1.png" alt="Cart icon" class="footer__carts-icon">
+                    <img src="img/footer/cart2.png" alt="Cart icon" class="footer__carts-icon">
+                    <img src="img/footer/cart3.png" alt="Cart icon" class="footer__carts-icon">
+                </div>
+            </div>
+            <p class="footer__carts-text">Мы явлемся обработчиками персональных данных</p>
+        </div>
+        <div class="footer__condition">
+            <h4 class="footer__title">Соглашения и условия</h4>
+            <p class="footer__condition-text first">
+                Займы и кредиты предоставляются партнерами Imoneys Сredit на сумму от 3 000 до 1 000 000 рублей
+                включительно на срок от 13 до 260 недель. Проценты за пользование денежных средств составляют от 40 до
+                360 процентов годовых. Расчетная сумма (основной долг и проценты) к возврату от 500 до 250 000 рублей.
+                Условия актуальны на 01.06.2021 и не являются публичной офертой. Пример расчета общей стоимости займа:
+                заём на 15 000 руб. и сроком 25 недель; проценты за весь период составят 5 000 руб. Итого ПСК 264,392 %.
+                За услуги сервиса может быть взята плата в размере от 48 до 446 руб. за активацию сервиса.
+            </p>
+            <p class="footer__condition-text">
+                В случае невозвращения в условленный срок суммы кредита или суммы процентов за пользование заёмными
+                средствами кредитор вынуждено начислит штраф за просрочку платежа. Большинство кредиторов идут на
+                уступки и дают 3 дополнительных рабочих дня для оплаты. Они предусмотрены на случай, к примеру, если
+                банковский перевод занял больше времени, чем обычно. Однако, в случае неполучения от Вас какой-либо
+                реакции в течение продолжительного времени, будет начислен штраф за просрочку срока погашения размером в
+                среднем 0,10% от первоначальной суммы для займов, 0,03% от суммы задолженности в среднем для
+                потребительских кредитов и кредитных карт. При несоблюдении Вами условий по погашению кредитов и займов,
+                данные о Вас могут быть переданы в реестр должников или БКИ, что негативно может сказаться на Вашей
+                кредитной истории и рейтинге кредитоспособности. Рекомендуем Вам вносить платеж в день получения данных
+                напоминаний. Погашая задолженность в срок, Вы формируете хорошую кредитную историю, что повышает Ваш
+                рейтинг кредитоспособности и шансы в дальнейшем получить кредит на более выгодных условиях.
+            </p>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-left">
+                <div class="footer__bottom-media">
+                    <img src="img/footer/num.svg" alt="Image" class="footer__icon">
+                </div>
+                <p class="footer__bottom-text">Imoneys Сredit ©2015–2022 Все права на сайт защищены.</p>
+            </div>
+
+            <div class="footer__bottom-right">
+                <a href="#" class="footer__bottom-btn btn-border">отписаться</a>
+                <a href="#" class="footer__bottom-soc">
+                    <img src="img/footer/youtube.svg" alt="Icon" class="footer__icon">
+                </a>
+                <a href="#" class="footer__bottom-soc">
+                    <img src="img/footer/instagram.svg" alt="Icon" class="footer__icon">
+                </a>
+                <a href="#" class="footer__bottom-soc">
+                    <img src="img/footer/facebook.svg" alt="Icon" class="footer__icon">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20220531100653"></script>
+</body>
+
+</html>
